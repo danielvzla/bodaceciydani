@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación de Boda | Cecilia & Daniel</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- 1. Hero (solo imagen) -->
+  <header class="hero">
+    <img
+      src="images/cyd-principal.png"
+      alt="Cecilia & Daniel"
+      class="hero__imagen"
+    />
+  </header>
+
+  <!-- 2. Save the Date + Countdown -->
+  <section id="save-the-date" class="save-date">
+    <h2 class="save-date__titulo">Save the Date</h2>
+    <div class="save-date__countdown" id="countdown">
+      <div class="countdown__item">
+        <span id="días">00</span>
+        <small>DÍAS</small>
+      </div>
+      <div class="countdown__item">
+        <span id="horas">00</span>
+        <small>HORAS</small>
+      </div>
+      <div class="countdown__item">
+        <span id="minutos">00</span>
+        <small>MINUTOS</small>
+      </div>
+      <div class="countdown__item">
+        <span id="segundos">00</span>
+        <small>SEGUNDOS</small>
+      </div>
+    </div>
+    <p class="save-date__fecha">6 de Diciembre 2025</p>
+  </section>
+
+  <!-- 3. Foto Secundaria -->
+  <section class="foto-secundaria">
+    <img
+      src="images/cyd-tercera.jpg"
+      alt="Foto adicional de Cecilia & Daniel"
+      class="foto-secundaria__imagen"
+    />
+  </section>
+
+  <!-- 4. Ceremonia y Celebración -->
+  <section id="ceremonia-celebracion" class="eventos">
+    <h2 class="eventos__titulo">UN DÍA PARA RECORDAR: CEREMONIA Y CELEBRACIÓN</h2>
+    <div class="evento">
+      <img
+        src="images/tercera-orden.jpg"
+        alt="Iglesia Tercera Orden"
+        class="evento__imagen"
+      />
+      <h3 class="evento__subtitulo">CEREMONIA</h3>
+      <p class="evento__descripcion">
+        Nos reuniremos para la misa a las <strong>5:00 P.M.</strong> en la iglesia
+        <strong>Tercera Orden</strong>. ¡Acompáñanos a ser testigos de este gran momento tan significativo
+        para nosotros!
+      </p>
+      <a
+        href="https://maps.app.goo.gl/UwRD5eYaJn1ZctfHA"
+        target="_blank"
+        rel="noopener"
+        class="btn btn--mapa"
+      >
+        Ver ubicación: Tercera Orden
+      </a>
+    </div>
+    <div class="evento">
+      <img
+        src="images/montes-molina.jpg"
+        alt="Salón Montes Molina"
+        class="evento__imagen"
+      />
+      <h3 class="evento__subtitulo">CELEBRACIÓN</h3>
+      <p class="evento__descripcion">
+        La fiesta será a las <strong>7:00 P.M.</strong> en el Salón <strong>Montes Molina</strong>, donde compartiremos con familiares y amigos esta
+        gran celebración. ¡No faltes!
+      </p>
+      <a
+        href="https://maps.app.goo.gl/e92qon9ayFuBLgra9"
+        target="_blank"
+        rel="noopener"
+        class="btn btn--mapa"
+      >
+        Ver ubicación: Montes Molina
+      </a>
+    </div>
+  </section>
+
+  <!-- 5. Confirmación de asistencia (Formulario HTML nativo) -->
+  <section id="confirmacion" class="confirmacion">
+    <h2 class="confirmacion__titulo">RSVP</h2>
+    <p class="confirmacion__detalle">NO NIÑOS</p>
+    <form 
+      name="RSVP" 
+      method="POST" 
+      data-netlify="true" 
+      netlify-honeypot="bot-field"
+      class="form-rsvp"
+    >
+      <input type="hidden" name="form-name" value="RSVP" />
+      <div style="display:none">
+        <label>¿Eres un robot? <input name="bot-field" /></label>
+      </div>
+
+      <div class="form-group">
+        <label for="nombre">Nombre completo<span class="required">*</span></label>
+        <input 
+          type="text" 
+          id="nombre" 
+          name="nombre" 
+          placeholder="Escribe tu nombre completo" 
+          required 
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="asistira">¿Asistirás al evento?<span class="required">*</span></label>
+        <select id="asistira" name="asistira" required>
+          <option value="" disabled selected>— Selecciona una opción —</option>
+          <option value="Asistiré">Asistiré</option>
+          <option value="No asistiré">No asistiré</option>
+        </select>
+      </div>
+
+      <div class="form-group" id="grupo-acompanante" style="display: none;">
+        <label for="acompanante">Nombre de tu acompañante</label>
+        <input 
+          type="text" 
+          id="acompanante" 
+          name="acompanante" 
+          placeholder="Escribe el nombre de tu acompañante" 
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="telefono">Teléfono<span class="required">*</span></label>
+        <input 
+          type="tel" 
+          id="telefono" 
+          name="telefono" 
+          placeholder="5512345678" 
+          pattern="[0-9]{8,15}" 
+          title="Solo números, mínimo 8 dígitos" 
+          required 
+        />
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="btn btn--confirmar">CONFIRMAR</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- 6. Sugerencias de hospedaje -->
+  <section id="hospedaje" class="hospedaje">
+    <h2 class="hospedaje__titulo">Sugerencias de hospedaje</h2>
+    <a
+      href="https://tus-opciones-de-hospedaje-ejemplo.com"
+      target="_blank"
+      rel="noopener"
+      class="btn btn--hospedaje"
+    >
+      Ver opciones
+    </a>
+  </section>
+
+  <!-- 7. Mesa de regalos -->
+  <section id="mesas-regalos" class="regalos">
+    <h2 class="regalos__titulo">Mesa de regalos</h2>
+    <div class="regalos__contenedor">
+      <div class="regalo">
+        <h3 class="regalo__marca">Liverpool</h3>
+        <a
+          href="https://www.liverpool.com.mx/registro-regalos"
+          target="_blank"
+          rel="noopener"
+          class="btn btn--regalo"
+        >
+          Ver selección
+        </a>
+      </div>
+      <div class="regalo">
+        <h3 class="regalo__marca">Amazon</h3>
+        <a
+          href="https://www.amazon.com.mx/mesa-regalos"
+          target="_blank"
+          rel="noopener"
+          class="btn btn--regalo"
+        >
+          Ver selección
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Pie de página -->
+  <footer class="footer">
+    <p class="footer__texto">
+      &copy; 2025 Cecilia &amp; Daniel. Todos los derechos reservados.
+    </p>
+  </footer>
+
+  <!-- 9. JavaScript: Countdown + Lógica de acompañante -->
+  <script src="js/countdown.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const selectAsistira = document.getElementById("asistira");
+      const grupoAcompanante = document.getElementById("grupo-acompanante");
+
+      selectAsistira.addEventListener("change", function () {
+        if (this.value === "Asistiré") {
+          grupoAcompanante.style.display = "block";
+        } else {
+          grupoAcompanante.style.display = "none";
+          const inputAcomp = document.getElementById("acompanante");
+          if (inputAcomp) inputAcomp.value = "";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
