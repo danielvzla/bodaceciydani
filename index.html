@@ -104,69 +104,84 @@
   </section>
 
   <!-- 5. Confirmación de asistencia (Formulario HTML nativo) -->
-  <section id="confirmacion" class="confirmacion">
-    <h2 class="confirmacion__titulo">RSVP</h2>
-    <p class="confirmacion__detalle">NO NIÑOS</p>
-    <form 
-      name="RSVP" 
-      method="POST" 
-      data-netlify="true" 
-      netlify-honeypot="bot-field"
-      class="form-rsvp"
-    >
-      <input type="hidden" name="form-name" value="RSVP" />
-      <div style="display:none">
-        <label>¿Eres un robot? <input name="bot-field" /></label>
-      </div>
+<section id="confirmacion" class="confirmacion">
+  <h2 class="confirmacion__titulo">RSVP</h2>
+  <p class="confirmacion__detalle">NO NIÑOS</p>
 
-      <div class="form-group">
-        <label for="nombre">Nombre completo<span class="required">*</span></label>
-        <input 
-          type="text" 
-          id="nombre" 
-          name="nombre" 
-          placeholder="Escribe tu nombre completo" 
-          required 
-        />
-      </div>
+  <!-- Formulario Netlify sin honeypot -->
+  <form 
+    name="RSVP" 
+    method="POST" 
+    data-netlify="true" 
+    class="form-rsvp"
+  >
+    <!-- Este input oculto es el que Netlify necesita -->
+    <input type="hidden" name="form-name" value="RSVP" />
 
-      <div class="form-group">
-        <label for="asistira">¿Asistirás al evento?<span class="required">*</span></label>
-        <select id="asistira" name="asistira" required>
-          <option value="" disabled selected>— Selecciona una opción —</option>
-          <option value="Asistiré">Asistiré</option>
-          <option value="No asistiré">No asistiré</option>
-        </select>
-      </div>
+    <div class="form-group">
+      <label for="nombre">Nombre completo<span class="required">*</span></label>
+      <input 
+        type="text" 
+        id="nombre" 
+        name="nombre" 
+        placeholder="Escribe tu nombre completo" 
+        required 
+      />
+    </div>
 
-      <div class="form-group" id="grupo-acompanante" style="display: none;">
-        <label for="acompanante">Nombre de tu acompañante</label>
-        <input 
-          type="text" 
-          id="acompanante" 
-          name="acompanante" 
-          placeholder="Escribe el nombre de tu acompañante" 
-        />
-      </div>
+    <div class="form-group">
+      <label for="asistira">¿Asistirás al evento?<span class="required">*</span></label>
+      <select id="asistira" name="asistira" required>
+        <option value="" disabled selected>— Selecciona una opción —</option>
+        <option value="Asistiré">Asistiré</option>
+        <option value="No asistiré">No asistiré</option>
+      </select>
+    </div>
 
-      <div class="form-group">
-        <label for="telefono">Teléfono<span class="required">*</span></label>
-        <input 
-          type="tel" 
-          id="telefono" 
-          name="telefono" 
-          placeholder="5512345678" 
-          pattern="[0-9]{8,15}" 
-          title="Solo números, mínimo 8 dígitos" 
-          required 
-        />
-      </div>
+    <div class="form-group" id="grupo-acompanante" style="display: none;">
+      <label for="acompanante">Nombre de tu acompañante</label>
+      <input 
+        type="text" 
+        id="acompanante" 
+        name="acompanante" 
+        placeholder="Escribe el nombre de tu acompañante" 
+      />
+    </div>
 
-      <div class="form-group">
-        <button type="submit" class="btn btn--confirmar">CONFIRMAR</button>
-      </div>
-    </form>
-  </section>
+    <div class="form-group">
+      <label for="telefono">Teléfono<span class="required">*</span></label>
+      <input 
+        type="tel" 
+        id="telefono" 
+        name="telefono" 
+        placeholder="5512345678" 
+        pattern="[0-9]{8,15}" 
+        title="Solo números, mínimo 8 dígitos" 
+        required 
+      />
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn--confirmar">CONFIRMAR</button>
+    </div>
+  </form>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const selectAsistira = document.getElementById("asistira");
+    const grupoAcompanante = document.getElementById("grupo-acompanante");
+
+    selectAsistira.addEventListener("change", function () {
+      if (this.value === "Asistiré") {
+        grupoAcompanante.style.display = "block";
+      } else {
+        grupoAcompanante.style.display = "none";
+        document.getElementById("acompanante").value = "";
+      }
+    });
+  });
+</script>
 
   <!-- 6. Sugerencias de hospedaje -->
   <section id="hospedaje" class="hospedaje">
