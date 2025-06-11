@@ -2,11 +2,11 @@
    Variables de color y tipografía
    ======================================================================== */
 :root {
-  --color-hero-bg: #1F273D;           /* Azul Noche Profundo */
-  --color-bg-general: #F5F1E8;        /* Marfil Cremoso */
-  --color-acento: #CBA135;            /* Dorado Metálico Mate */
-  --color-text-base: #4B4B4B;         /* Gris Carbón Medio */
-  --color-hover-secundario: #2F4F4F;  /* Azul Petróleo Suave */
+  --color-hero-bg: #1F273D;           /* Azul noche profundo */
+  --color-bg-general: #F5F1E8;        /* Marfil cremoso */
+  --color-acento: #CBA135;            /* Dorado metálico mate */
+  --color-text-base: #4B4B4B;         /* Gris carbón medio */
+  --color-hover-secundario: #2F4F4F;  /* Azul petróleo suave */
 
   --font-heading: "Playfair Display", serif;
   --font-body: "Montserrat", sans-serif;
@@ -40,113 +40,101 @@ body {
   line-height: 1.6;
 }
 
-/* Estilos de enlaces genéricos */
 a {
   color: var(--color-acento);
   text-decoration: none;
   transition: color var(--tiempo-transicion);
 }
-
 a:hover {
   color: var(--color-hover-secundario);
 }
 
 /* ========================================================================
-   1. Estilos para Hero / Portada (solo imagen)
+   1. Hero / Portada (solo imagen)
    ======================================================================== */
 .hero {
   width: 100%;
-  height: auto;  
   background-color: var(--color-bg-general);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 0;
+  padding: var(--espacio-medio) 0;
 }
-
 .hero__imagen {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
 }
 
 /* ========================================================================
-   2. Estilos para Save the Date / Countdown
+   2. Save the Date / Countdown
    ======================================================================== */
 .save-date {
-  padding: 3rem 1rem;
-  text-align: center;
   background-color: var(--color-bg-general);
+  text-align: center;
+  padding: var(--espacio-grande) 1rem;
 }
-
 .save-date__titulo {
   font-family: var(--font-heading);
   font-size: 2.5rem;
+  margin-bottom: var(--espacio-medio);
   color: var(--color-hero-bg);
-  margin-bottom: 1.5rem;
 }
-
 .save-date__countdown {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 1rem;
+  gap: var(--espacio-grande);
+  margin-bottom: var(--espacio-medio);
   flex-wrap: wrap;
 }
-
 .countdown__item {
-  background-color: #ffffff;
-  border-radius: 0.5rem;
-  padding: 1rem 1.5rem;
+  background-color: #fff;
+  padding: var(--espacio-pequeño) var(--espacio-medio);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
   min-width: 80px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-
 .countdown__item span {
   display: block;
   font-family: var(--font-heading);
   font-size: 2rem;
   color: var(--color-hero-bg);
 }
-
 .countdown__item small {
+  display: block;
   font-size: 0.75rem;
   color: var(--color-text-base);
+  margin-top: 4px;
 }
-
 .save-date__fecha {
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: var(--color-text-base);
 }
 
 /* ========================================================================
-   3. Estilos para Foto Secundaria
+   3. Foto Secundaria
    ======================================================================== */
 .foto-secundaria {
   background-color: var(--color-bg-general);
   text-align: center;
   padding: var(--espacio-grande) 1rem;
 }
-
 .foto-secundaria__imagen {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  display: inline-block;
-  margin: 0 auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 /* ========================================================================
-   4. Estilos para Ceremonia y Celebración
+   4. Ceremonia y Celebración
    ======================================================================== */
 .eventos {
   background-color: var(--color-bg-general);
   padding: var(--espacio-grande) 1rem;
 }
-
 .eventos__titulo {
   font-family: var(--font-heading);
   font-size: 2rem;
@@ -154,31 +142,27 @@ a:hover {
   color: var(--color-hero-bg);
   text-align: center;
 }
-
 .evento {
-  background-color: white;
+  background-color: #fff;
   margin: 0 auto var(--espacio-grande);
   max-width: 800px;
   padding: var(--espacio-medio);
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   text-align: center;
 }
-
 .evento__imagen {
   width: 100%;
   height: auto;
   border-radius: 6px;
   margin-bottom: var(--espacio-medio);
 }
-
 .evento__subtitulo {
   font-family: var(--font-heading);
   font-size: 1.5rem;
   margin-bottom: var(--espacio-pequeño);
   color: var(--color-hero-bg);
 }
-
 .evento__descripcion {
   font-family: var(--font-body);
   font-size: 1rem;
@@ -186,224 +170,158 @@ a:hover {
   margin-bottom: var(--espacio-medio);
   line-height: 1.5;
 }
-
 .btn--mapa {
   background-color: var(--color-hero-bg);
-  color: white;
+  color: #fff;
   padding: var(--espacio-pequeño) var(--espacio-grande);
   border-radius: 4px;
   transition: background-color var(--tiempo-transicion), transform var(--tiempo-transicion);
-  text-decoration: none;
 }
-
 .btn--mapa:hover {
   background-color: var(--color-hover-secundario);
   transform: translateY(-2px);
 }
 
 /* ========================================================================
-   5. Estilos para Confirmación de asistencia (form-rsvp)
+   5. Confirmación de asistencia (Google Forms)
    ======================================================================== */
 .confirmacion {
   background-color: var(--color-bg-general);
   text-align: center;
   padding: var(--espacio-grande) 1rem;
 }
-
 .confirmacion__titulo {
   font-family: var(--font-heading);
   font-size: 2rem;
   color: var(--color-hero-bg);
   margin-bottom: var(--espacio-pequeño);
 }
-
 .confirmacion__detalle {
   font-family: var(--font-body);
   font-size: 1rem;
   color: var(--color-text-base);
   margin-bottom: var(--espacio-pequeño);
 }
-
-/* Contenedor blanco del formulario */
-.form-rsvp {
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: white;
-  padding: var(--espacio-grande);
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.google-form-wrapper {
+  display: flex;
+  justify-content: center;
 }
-
-/* Cada grupo de label+input */
-.form-group {
-  margin-bottom: var(--espacio-medio);
+.google-form-wrapper iframe {
   width: 100%;
+  max-width: 640px;
+  height: auto;
+  border: 0;
 }
 
-.form-group label {
-  display: block;
+/* ========================================================================
+   6. Carrusel de Hospedaje (Swiper)
+   ======================================================================== */
+.swiper-container {
+  position: relative;
+  padding: var(--espacio-grande) 0;
+}
+.swiper-wrapper {
+  display: flex;
+}
+.swiper-slide {
+  /* ancho auto para que Swiper lo controle */
+  width: auto;
+}
+.hospedaje__card {
+  background-color: #fff;
+  padding: var(--espacio-medio);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+.hospedaje__imagen {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: var(--espacio-medio);
+}
+.hospedaje__nombre {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-hero-bg);
+  margin-bottom: 0.25rem;
+}
+.hospedaje__ubicacion {
   font-family: var(--font-body);
   font-size: 0.9rem;
   color: var(--color-text-base);
-  margin-bottom: 0.25rem;
+  margin-bottom: var(--espacio-pequeño);
 }
-
-.form-group label .required {
-  color: #d33;
-  margin-left: 0.15rem;
-  font-weight: bold;
-}
-
-/* Inputs y select redondeados */
-.form-rsvp input[type="text"],
-.form-rsvp input[type="tel"],
-.form-rsvp select {
-  width: 100%;
-  padding: var(--espacio-pequeño) var(--espacio-medio);
-  font-family: var(--font-body);
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  background-color: #fafafa;
-  transition: border-color var(--tiempo-transicion),
-              background-color var(--tiempo-transicion);
-}
-
-.form-rsvp input::placeholder,
-.form-rsvp select option[value=""] {
-  color: #999;
-}
-
-.form-rsvp input[type="text"]:focus,
-.form-rsvp input[type="tel"]:focus,
-.form-rsvp select:focus {
-  outline: none;
-  border-color: var(--color-hero-bg);
-  background-color: #fff;
-}
-
-/* Flecha personalizada para el select */
-.form-rsvp select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='10'%20height='7'%3E%3Cpath%20fill='%23999'%20d='M0%200l5%207l5-7z'/%3E%3C/svg%3E") 
-              no-repeat right 1rem center;
-  background-size: 10px 7px;
-  padding-right: 2rem;
-}
-
-/* Botón CONFIRMAR */
-.btn--confirmar {
-  width: 100%;
-  padding: var(--espacio-pequeño) 0;
+.hospedaje__tarifa {
   font-family: var(--font-heading);
   font-size: 1rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  background-color: var(--color-hero-bg);
-  color: white;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color var(--tiempo-transicion),
-              transform var(--tiempo-transicion);
-  margin-top: var(--espacio-medio);
+  margin-bottom: var(--espacio-medio);
 }
-
-.btn--confirmar:hover {
+.btn--hospedaje {
+  background-color: var(--color-acento);
+  color: #fff;
+  padding: var(--espacio-pequeño) var(--espacio-medio);
+  border-radius: 4px;
+  display: inline-block;
+  transition: background-color var(--tiempo-transicion), transform var(--tiempo-transicion);
+}
+.btn--hospedaje:hover {
   background-color: var(--color-hover-secundario);
   transform: translateY(-2px);
 }
 
-/* Input inválido (HTML5) */
-.form-rsvp input:invalid {
-  border-color: #d33;
+/* Flechas de navegación Swiper */
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--color-hero-bg);
+  width: 32px;
+  height: 32px;
 }
-
-/* Transición para el bloque de acompañante */
-#grupo-acompanante {
-  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
-  overflow: hidden;
-  max-height: 0;
-  padding-top: 0;
-}
-
-#grupo-acompanante input {
-  margin-top: 0.5rem;
-}
-
-#grupo-acompanante[style*="display: block"] {
-  max-height: 200px;
-  padding-top: var(--espacio-pequeño);
-}
+.swiper-button-prev { left: 10px; }
+.swiper-button-next { right: 10px; }
 
 /* ========================================================================
-   6. Estilos para Hospedaje y Mesa de regalos
+   7. Mesa de regalos
    ======================================================================== */
-.hospedaje,
 .regalos {
   background-color: var(--color-bg-general);
   padding: var(--espacio-grande) 1rem;
   text-align: center;
 }
-
-.hospedaje__titulo,
 .regalos__titulo {
   font-family: var(--font-heading);
   font-size: 2rem;
   color: var(--color-hero-bg);
   margin-bottom: var(--espacio-medio);
 }
-
-.btn--hospedaje {
-  background-color: var(--color-hero-bg);
-  color: white;
-  padding: var(--espacio-pequeño) var(--espacio-grande);
-  border-radius: 4px;
-  transition: background-color var(--tiempo-transicion),
-              transform var(--tiempo-transicion);
-  text-decoration: none;
-}  
-.btn--hospedaje:hover {
-  background-color: var(--color-hover-secundario);
-  transform: translateY(-2px);
-}
-
 .regalos__contenedor {
   display: flex;
   justify-content: center;
   gap: var(--espacio-grande);
   flex-wrap: wrap;
 }
-
 .regalo {
-  background-color: white;
+  background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   padding: var(--espacio-medio);
   max-width: 200px;
   width: 100%;
   text-align: center;
-  margin-bottom: var(--espacio-grande);
 }
-
 .regalo__marca {
   font-family: var(--font-heading);
   font-size: 1.25rem;
   margin-bottom: var(--espacio-pequeño);
   color: var(--color-hero-bg);
 }
-
 .btn--regalo {
   background-color: var(--color-acento);
-  color: white;
+  color: #fff;
   padding: var(--espacio-pequeño) var(--espacio-medio);
   margin-top: var(--espacio-pequeño);
   border-radius: 4px;
-  transition: background-color var(--tiempo-transicion),
-              transform var(--tiempo-transicion);
-  text-decoration: none;
+  transition: background-color var(--tiempo-transicion), transform var(--tiempo-transicion);
 }
 .btn--regalo:hover {
   background-color: var(--color-hover-secundario);
@@ -411,7 +329,7 @@ a:hover {
 }
 
 /* ========================================================================
-   7. Estilos para Pie de página
+   8. Pie de página
    ======================================================================== */
 .footer {
   background-color: var(--color-hero-bg);
@@ -421,149 +339,31 @@ a:hover {
 .footer__texto {
   font-family: var(--font-body);
   font-size: 0.875rem;
-  color: white;
+  color: #fff;
 }
 
 /* ========================================================================
    Media Queries para responsividad
    ======================================================================== */
 @media (max-width: 768px) {
-  .save-date__titulo {
-    font-size: 2rem;
-  }
-  .save-date__countdown {
-    flex-direction: column;
-    gap: var(--espacio-medio);
-  }
-  .countdown__item {
-    max-width: none;
-    width: 100%;
-  }
+  .save-date__titulo { font-size: 2rem; }
+  .save-date__countdown { flex-direction: column; gap: var(--espacio-medio); }
+  .countdown__item { width: 100%; }
 
-  .foto-secundaria__imagen {
-    max-width: 90%;
-  }
+  .foto-secundaria__imagen { max-width: 90%; }
 
-  .eventos__titulo {
-    font-size: 1.75rem;
-  }
-  .evento {
-    padding: var(--espacio-pequeño);
-  }
+  .eventos__titulo { font-size: 1.75rem; }
+  .evento { padding: var(--espacio-pequeño); }
 
-  /* Ajustes para el formulario en móvil */
-  .form-rsvp {
-    padding: var(--espacio-medio);
-  }
-  .form-group label {
-    font-size: 0.85rem;
-  }
-  .form-rsvp input,
-  .form-rsvp select {
-    font-size: 0.9rem;
-    padding: var(--espacio-pequeño) var(--espacio-pequeño);
-  }
-  .btn--confirmar {
-    font-size: 0.9rem;
-    padding: var(--espacio-pequeño);
-  }
+  .form-rsvp { padding: var(--espacio-medio); }
+  .form-group label { font-size: 0.85rem; }
+  .form-rsvp input, .form-rsvp select { font-size: 0.9rem; padding: var(--espacio-pequeño); }
+  .btn--confirmar { font-size: 0.9rem; padding: var(--espacio-pequeño); }
 
-  .btn,
-  .btn--mapa,
-  .btn--hospedaje,
-  .btn--regalo {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto var(--espacio-medio);
-  }
+  .regalos__contenedor { flex-direction: column; align-items: center; }
 
-  .regalos__contenedor {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-/* -------------------------------
-   Carrusel de Hospedaje (Swiper)
-   ------------------------------- */
-.swiper-container {
-  padding: var(--espacio-grande) 0;
-}
-
-
-.hospedaje__card {
-  background-color: white;
-  padding: var(--espacio-medio);
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  text-align: left;
-}
-
-.hospedaje__imagen {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: var(--espacio-medio);
-}
-
-.hospedaje__nombre {
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  color: var(--color-hero-bg);
-  margin-bottom: 0.25rem;
-}
-
-.hospedaje__ubicacion {
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  color: var(--color-text-base);
-  margin-bottom: var(--espacio-pequeño);
-}
-
-.hospedaje__tarifa {
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  margin-bottom: var(--espacio-medio);
-}
-
-.btn--hospedaje {
-  background-color: var(--color-acento);
-  color: white;
-  padding: var(--espacio-pequeño) var(--espacio-medio);
-  border-radius: 4px;
-  display: inline-block;
-  transition: background-color var(--tiempo-transicion),
-              transform var(--tiempo-transicion);
-}
-
-.btn--hospedaje:hover {
-  background-color: var(--color-hover-secundario);
-  transform: translateY(-2px);
-}
-/* -------------------------------
-   Posicionamiento y estilo de flechas Swiper
-   ------------------------------- */
-.swiper-container {
-  position: relative; /* para que las flechas queden dentro */
-}
-
-/* Color y tamaño de las flechas */
-.swiper-button-prev,
-.swiper-button-next {
-  color: var(--color-hero-bg);   /* usa tu color principal */
-  width: 32px;
-  height: 32px;
-}
-
-/* Ajusta su posición horizontal */
-.swiper-button-prev {
-  left: 10px;
-}
-.swiper-button-next {
-  right: 10px;
-}
-@media (max-width: 768px) {
-  .hospedaje__grid {
-    /* en pantallas pequeñas, una única columna */
-    grid-template-columns: 1fr !important;
+  /* En móvil, cada slide ocupa 100% */
+  .swiper-container .swiper-slide {
+    width: 100% !important;
   }
 }
