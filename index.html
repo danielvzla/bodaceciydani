@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Invitación de Boda | Cecilia & Daniel</title>
+  <title>Invitación de Boda | Cecilia &amp; Daniel</title>
 
   <!-- Google Fonts -->
   <link
@@ -13,11 +13,12 @@
 
   <!-- Hoja de estilos principal -->
   <link rel="stylesheet" href="css/styles.css" />
+
   <!-- Swiper CSS -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
 </head>
 <body>
   <!-- 1. Hero (solo imagen) -->
@@ -34,20 +35,16 @@
     <h2 class="save-date__titulo">Save the Date</h2>
     <div class="save-date__countdown" id="countdown">
       <div class="countdown__item">
-        <span id="días">00</span>
-        <small>DÍAS</small>
+        <span id="días">00</span><small>DÍAS</small>
       </div>
       <div class="countdown__item">
-        <span id="horas">00</span>
-        <small>HORAS</small>
+        <span id="horas">00</span><small>HORAS</small>
       </div>
       <div class="countdown__item">
-        <span id="minutos">00</span>
-        <small>MINUTOS</small>
+        <span id="minutos">00</span><small>MINUTOS</small>
       </div>
       <div class="countdown__item">
-        <span id="segundos">00</span>
-        <small>SEGUNDOS</small>
+        <span id="segundos">00</span><small>SEGUNDOS</small>
       </div>
     </div>
     <p class="save-date__fecha">6 de Diciembre 2025</p>
@@ -74,8 +71,7 @@
       <h3 class="evento__subtitulo">CEREMONIA</h3>
       <p class="evento__descripcion">
         Nos reuniremos para la misa a las <strong>5:00 P.M.</strong> en la iglesia
-        <strong>Tercera Orden</strong>. ¡Acompáñanos a ser testigos de este gran momento tan significativo
-        para nosotros!
+        <strong>Tercera Orden</strong>. ¡Acompáñanos a ser testigos de este gran momento tan significativo para nosotros!
       </p>
       <a
         href="https://maps.app.goo.gl/UwRD5eYaJn1ZctfHA"
@@ -94,8 +90,7 @@
       />
       <h3 class="evento__subtitulo">CELEBRACIÓN</h3>
       <p class="evento__descripcion">
-        La fiesta será a las <strong>7:00 P.M.</strong> en el Salón <strong>Montes Molina</strong>, donde compartiremos con familiares y amigos esta
-        gran celebración. ¡No faltes!
+        La fiesta será a las <strong>7:00 P.M.</strong> en el Salón <strong>Montes Molina</strong>, donde compartiremos con familiares y amigos esta gran celebración. ¡No faltes!
       </p>
       <a
         href="https://maps.app.goo.gl/e92qon9ayFuBLgra9"
@@ -109,127 +104,132 @@
   </section>
 
   <!-- 5. Confirmación de asistencia (Formulario HTML nativo) -->
-<section id="confirmacion" class="confirmacion">
-  <h2 class="confirmacion__titulo">RSVP</h2>
-  <p class="confirmacion__detalle">NO NIÑOS</p>
-    <!-- A continuación va el iframe de Google Forms: -->
-  <div class="google-form-wrapper">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScbz7qpLEcgszFtRqCs9ligH26R3LFkKF5eotdk0x3ERscrSw/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>  
+  <section id="confirmacion" class="confirmacion">
+    <h2 class="confirmacion__titulo">RSVP</h2>
+    <p class="confirmacion__detalle">NO NIÑOS</p>
+    <div class="google-form-wrapper">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScbz7qpLEcgszFtRqCs9ligH26R3LFkKF5eotdk0x3ERscrSw/viewform?embedded=true"
+        style="width:100%; max-width:640px; height:auto; border:0;"
+        allowfullscreen
+      >
+        Cargando…
+      </iframe>
     </div>
-</section>
- <!-- 6. Tarifas preferenciales de hospedaje -->
-<section id="hospedaje" class="hospedaje">
-  <h2 class="hospedaje__titulo">Tarifas preferenciales de hospedaje</h2>
+  </section>
 
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <!-- Slide: City Express Mérida -->
-      <div class="swiper-slide hospedaje__card">
-        <img
-          src="images/city-express.jpg"
-          alt="City Express Mérida"
-          class="hospedaje__imagen"
-        />
-        <h3 class="hospedaje__nombre">City Express Mérida</h3>
-        <p class="hospedaje__ubicacion">300 mts de Montes Molina</p>
-        <p class="hospedaje__tarifa">Desde $1,924 MXN / noche</p>
-        <a
-          href="images/FolletoCityExpress.pdf"
-          target="_blank"
-          rel="noopener"
-          class="btn btn--hospedaje"
-        >
-          Ver información
-        </a>
+  <!-- 6. Tarifas preferenciales de hospedaje -->
+  <section id="hospedaje" class="hospedaje">
+    <h2 class="hospedaje__titulo">Tarifas preferenciales de hospedaje</h2>
+
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Slide: City Express Mérida -->
+        <div class="swiper-slide hospedaje__card">
+          <img
+            src="images/city-express.jpg"
+            alt="City Express Mérida"
+            class="hospedaje__imagen"
+          />
+          <h3 class="hospedaje__nombre">City Express Mérida</h3>
+          <p class="hospedaje__ubicacion">300 mts de Montes Molina</p>
+          <p class="hospedaje__tarifa">Desde $1,924 MXN / noche</p>
+          <a
+            href="images/FolletoCityExpress.pdf"
+            target="_blank"
+            rel="noopener"
+            class="btn btn--hospedaje"
+          >
+            Ver información
+          </a>
+        </div>
+
+        <!-- Slide: Holiday Inn Mérida -->
+        <div class="swiper-slide hospedaje__card">
+          <img
+            src="images/HolidayInn.jpg"
+            alt="Holiday Inn Mérida"
+            class="hospedaje__imagen"
+          />
+          <h3 class="hospedaje__nombre">Holiday Inn Mérida</h3>
+          <p class="hospedaje__ubicacion">350 mts de Montes Molina</p>
+          <p class="hospedaje__tarifa">Desde $1,760 MXN / noche</p>
+          <a
+            href="images/FolletoHolidayInn.pdf"
+            target="_blank"
+            rel="noopener"
+            class="btn btn--hospedaje"
+          >
+            Ver información
+          </a>
+        </div>
+
+        <!-- Slide: Hotel El Conquistador -->
+        <div class="swiper-slide hospedaje__card">
+          <img
+            src="images/hotelelconquistador.jpg"
+            alt="Hotel El Conquistador"
+            class="hospedaje__imagen"
+          />
+          <h3 class="hospedaje__nombre">Hotel El Conquistador</h3>
+          <p class="hospedaje__ubicacion">120 mts de Montes Molina</p>
+          <p class="hospedaje__tarifa">Desde $1,400 MXN / noche</p>
+          <a
+            href="images/FolletoHotelElConquistador.pdf"
+            target="_blank"
+            rel="noopener"
+            class="btn btn--hospedaje"
+          >
+            Ver información
+          </a>
+        </div>
+
+        <!-- Slide: Hyatt Regency Mérida -->
+        <div class="swiper-slide hospedaje__card">
+          <img
+            src="images/HyattRegencyMerida.jpg"
+            alt="Hyatt Regency Mérida"
+            class="hospedaje__imagen"
+          />
+          <h3 class="hospedaje__nombre">Hyatt Regency Mérida</h3>
+          <p class="hospedaje__ubicacion">450 mts de Montes Molina</p>
+          <p class="hospedaje__tarifa">Desde $1,960 MXN / noche</p>
+          <a
+            href="images/FolletoHyattRegencyMérida.pdf"
+            target="_blank"
+            rel="noopener"
+            class="btn btn--hospedaje"
+          >
+            Ver información
+          </a>
+        </div>
+
+        <!-- Slide: Mesón de la Luna -->
+        <div class="swiper-slide hospedaje__card">
+          <img
+            src="images/MesonDeLaLuna.jpg"
+            alt="Mesón de la Luna"
+            class="hospedaje__imagen"
+          />
+          <h3 class="hospedaje__nombre">Mesón de la Luna</h3>
+          <p class="hospedaje__ubicacion">7.4 km de Montes Molina (Zona Norte)</p>
+          <p class="hospedaje__tarifa">Desde $1,635 MXN / noche</p>
+          <a
+            href="images/MesonDeLaLuna.pdf"
+            target="_blank"
+            rel="noopener"
+            class="btn btn--hospedaje"
+          >
+            Ver información
+          </a>
+        </div>
       </div>
 
-      <!-- Slide: Holiday Inn Mérida -->
-      <div class="swiper-slide hospedaje__card">
-        <img
-          src="images/HolidayInn.jpg"
-          alt="Holiday Inn Mérida"
-          class="hospedaje__imagen"
-        />
-        <h3 class="hospedaje__nombre">Holiday Inn Mérida</h3>
-        <p class="hospedaje__ubicacion">350 mts de Montes Molina</p>
-        <p class="hospedaje__tarifa">Desde $1,760 MXN / noche</p>
-        <a
-          href="images/FolletoHolidayInn.pdf"
-          target="_blank"
-          rel="noopener"
-          class="btn btn--hospedaje"
-        >
-          Ver información
-        </a>
-      </div>
-
-      <!-- Slide: Hotel El Conquistador -->
-      <div class="swiper-slide hospedaje__card">
-        <img
-          src="images/hotelelconquistador.jpg"
-          alt="Hotel El Conquistador"
-          class="hospedaje__imagen"
-        />
-        <h3 class="hospedaje__nombre">Hotel El Conquistador</h3>
-        <p class="hospedaje__ubicacion">120 mts de Montes Molina</p>
-        <p class="hospedaje__tarifa">Desde $1,400 MXN / noche</p>
-        <a
-          href="images/FolletoHotelElConquistador.pdf"
-          target="_blank"
-          rel="noopener"
-          class="btn btn--hospedaje"
-        >
-          Ver información
-        </a>
-      </div>
-
-      <!-- Slide: Hyatt Regency Mérida -->
-      <div class="swiper-slide hospedaje__card">
-        <img
-          src="images/HyattRegencyMerida.jpg"
-          alt="Hyatt Regency Mérida"
-          class="hospedaje__imagen"
-        />
-        <h3 class="hospedaje__nombre">Hyatt Regency Mérida</h3>
-        <p class="hospedaje__ubicacion">450 mts de Montes Molina</p>
-        <p class="hospedaje__tarifa">Desde $1,960 MXN / noche</p>
-        <a
-          href="images/FolletoHyattRegencyMérida.pdf"
-          target="_blank"
-          rel="noopener"
-          class="btn btn--hospedaje"
-        >
-          Ver información
-        </a>
-      </div>
-<!-- Slide: Mesón de la Luna -->
-      <div class="swiper-slide hospedaje__card">
-        <img
-          src="images/MesonDeLaLuna.jpg"
-          alt="Meson De La Luna"
-          class="hospedaje__imagen"
-        />
-        <h3 class="hospedaje__nombre">Mesón de la Luna</h3>
-        <p class="hospedaje__ubicacion">7.4 kilometros de Montes Molina (Zona Norte)</p>
-        <p class="hospedaje__tarifa">Desde $1,635 MXN / noche</p>
-        <a
-          href="images/MesonDeLaLuna.pdf"
-          target="_blank"
-          rel="noopener"
-          class="btn btn--hospedaje"
-        >
-          Ver información
-        </a>
-      </div>
-      <!-- Agrega más slides siguiendo el mismo patrón -->
+      <!-- Botones de navegación -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-
-    <!-- Botones de navegación -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-</section>
-
+  </section>
 
   <!-- 7. Mesa de regalos -->
   <section id="mesas-regalos" class="regalos">
@@ -262,9 +262,7 @@
 
   <!-- 8. Pie de página -->
   <footer class="footer">
-    <p class="footer__texto">
-      &copy; 2025 Cecilia &amp; Daniel. Todos los derechos reservados.
-    </p>
+    <p class="footer__texto">&copy; 2025 Cecilia &amp; Daniel. Todos los derechos reservados.</p>
   </footer>
 
   <!-- 9. JavaScript: Countdown + Lógica de acompañante -->
@@ -273,8 +271,7 @@
     document.addEventListener("DOMContentLoaded", function () {
       const selectAsistira = document.getElementById("asistira");
       const grupoAcompanante = document.getElementById("grupo-acompanante");
-
-      selectAsistira.addEventListener("change", function () {
+      selectAsistira?.addEventListener("change", function () {
         if (this.value === "Asistiré") {
           grupoAcompanante.style.display = "block";
         } else {
@@ -285,33 +282,25 @@
       });
     });
   </script>
-  <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    new Swiper(".swiper-container", {
-  slidesPerView: 1,      // 1 slide en móviles
-  breakpoints: {
-    768: { slidesPerView: 2 },
-    1024: { slidesPerView: 3 },
-  },
-  /* … resto de configuración … */
-});
 
-    const swiper = new Swiper(".swiper-container", {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      loop: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
-      },
+  <!-- 10. Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      new Swiper(".swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        },
+      });
     });
-  });
-</script>
+  </script>
 </body>
 </html>
