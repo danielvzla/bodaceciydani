@@ -289,6 +289,15 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", () => {
+    new Swiper(".swiper-container", {
+  slidesPerView: 1,      // 1 slide en móviles
+  breakpoints: {
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 },
+  },
+  /* … resto de configuración … */
+});
+
     const swiper = new Swiper(".swiper-container", {
       slidesPerView: 1,
       spaceBetween: 20,
