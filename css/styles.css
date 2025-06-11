@@ -489,9 +489,6 @@ a:hover {
   padding: var(--espacio-grande) 0;
 }
 
-.swiper-slide {
-  width: auto; /* deja que Swiper calcule el ancho */
-}
 
 .hospedaje__card {
   background-color: white;
@@ -563,4 +560,10 @@ a:hover {
 }
 .swiper-button-next {
   right: 10px;
+}
+@media (max-width: 768px) {
+  .hospedaje__grid {
+    /* en pantallas pequeñas, una única columna */
+    grid-template-columns: 1fr !important;
+  }
 }
