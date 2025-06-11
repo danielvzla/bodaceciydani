@@ -485,3 +485,63 @@ a:hover {
     align-items: center;
   }
 }
+/* -------------------------------
+   Carrusel de Hospedaje (Swiper)
+   ------------------------------- */
+.swiper-container {
+  padding: var(--espacio-grande) 0;
+}
+
+.swiper-slide {
+  width: auto; /* deja que Swiper calcule el ancho */
+}
+
+.hospedaje__card {
+  background-color: white;
+  padding: var(--espacio-medio);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.hospedaje__imagen {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: var(--espacio-medio);
+}
+
+.hospedaje__nombre {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-hero-bg);
+  margin-bottom: 0.25rem;
+}
+
+.hospedaje__ubicacion {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-text-base);
+  margin-bottom: var(--espacio-pequeño);
+}
+
+.hospedaje__tarifa {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  margin-bottom: var(--espacio-medio);
+}
+
+.btn--hospedaje {
+  background-color: var(--color-acento);
+  color: white;
+  padding: var(--espacio-pequeño) var(--espacio-medio);
+  border-radius: 4px;
+  display: inline-block;
+  transition: background-color var(--tiempo-transicion),
+              transform var(--tiempo-transicion);
+}
+
+.btn--hospedaje:hover {
+  background-color: var(--color-hover-secundario);
+  transform: translateY(-2px);
+}
