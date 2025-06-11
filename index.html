@@ -104,141 +104,19 @@
   </section>
 
   <!-- 5. Confirmación de asistencia (Formulario HTML nativo) -->
-  .confirmacion {
-  background-color: var(--color-bg-general);
-  text-align: center;
-  padding: var(--espacio-grande) 1rem;
-}
-
-.confirmacion__titulo {
-  font-family: var(--font-heading);
-  font-size: 2rem;
-  color: var(--color-hero-bg);
-  margin-bottom: var(--espacio-pequeño);
-}
-
-.confirmacion__detalle {
-  font-family: var(--font-body);
-  font-size: 1rem;
-  color: var(--color-text-base);
-  margin-bottom: var(--espacio-pequeño);
-}
-
-/* Contenedor blanco del formulario */
-.form-rsvp {
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: white;
-  padding: var(--espacio-grande);
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* Cada grupo de label+input */
-.form-group {
-  margin-bottom: var(--espacio-medio);
-  width: 100%;
-}
-
-.form-group label {
-  display: block;
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  color: var(--color-text-base);
-  margin-bottom: 0.25rem;
-}
-
-.form-group label .required {
-  color: #d33;
-  margin-left: 0.15rem;
-  font-weight: bold;
-}
-
-/* Inputs y select redondeados */
-.form-rsvp input[type="text"],
-.form-rsvp input[type="tel"],
-.form-rsvp select {
-  width: 100%;
-  padding: var(--espacio-pequeño) var(--espacio-medio);
-  font-family: var(--font-body);
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  background-color: #fafafa;
-  transition: border-color var(--tiempo-transicion),
-              background-color var(--tiempo-transicion);
-}
-
-.form-rsvp input::placeholder,
-.form-rsvp select option[value=""] {
-  color: #999;
-}
-
-.form-rsvp input[type="text"]:focus,
-.form-rsvp input[type="tel"]:focus,
-.form-rsvp select:focus {
-  outline: none;
-  border-color: var(--color-hero-bg);
-  background-color: #fff;
-}
-
-/* Flecha personalizada para el select */
-.form-rsvp select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='10'%20height='7'%3E%3Cpath%20fill='%23999'%20d='M0%200l5%207l5-7z'/%3E%3C/svg%3E") 
-              no-repeat right 1rem center;
-  background-size: 10px 7px;
-  padding-right: 2rem;
-}
-
-/* Botón CONFIRMAR */
-.btn--confirmar {
-  width: 100%;
-  padding: var(--espacio-pequeño) 0;
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  background-color: var(--color-hero-bg);
-  color: white;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color var(--tiempo-transicion),
-              transform var(--tiempo-transicion);
-  margin-top: var(--espacio-medio);
-}
-
-.btn--confirmar:hover {
-  background-color: var(--color-hover-secundario);
-  transform: translateY(-2px);
-}
-
-/* Input inválido (HTML5) */
-.form-rsvp input:invalid {
-  border-color: #d33;
-}
-
-/* Transición para el bloque de acompañante */
-#grupo-acompanante {
-  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
-  overflow: hidden;
-  max-height: 0;
-  padding-top: 0;
-}
-
-#grupo-acompanante input {
-  margin-top: 0.5rem;
-}
-
-#grupo-acompanante[style*="display: block"] {
-  max-height: 200px;
-  padding-top: var(--espacio-pequeño);
-}
-
-/* 
+  <section id="confirmacion" class="confirmacion">
+    <h2 class="confirmacion__titulo">RSVP</h2>
+    <p class="confirmacion__detalle">NO NIÑOS</p>
+    <div class="google-form-wrapper">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScbz7qpLEcgszFtRqCs9ligH26R3LFkKF5eotdk0x3ERscrSw/viewform?embedded=true"
+        style="width:100%; max-width:640px; height:auto; border:0;"
+        allowfullscreen
+      >
+        Cargando…
+      </iframe>
+    </div>
+  </section>
 
   <!-- 6. Tarifas preferenciales de hospedaje -->
   <section id="hospedaje" class="hospedaje">
