@@ -75,33 +75,32 @@ a:hover {
    2. Estilos para Save the Date / Countdown
    ======================================================================== */
 .save-date {
-  background-color: var(--color-bg-general);
+  padding: 3rem 1rem;
   text-align: center;
-  padding: var(--espacio-grande) 1rem;
+  background-color: var(--color-bg-general);
 }
 
 .save-date__titulo {
   font-family: var(--font-heading);
   font-size: 2.5rem;
-  margin-bottom: var(--espacio-medio);
   color: var(--color-hero-bg);
+  margin-bottom: 1.5rem;
 }
 
 .save-date__countdown {
   display: flex;
   justify-content: center;
-  gap: var(--espacio-grande);
-  margin-bottom: var(--espacio-medio);
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .countdown__item {
-  background-color: white;
-  padding: var(--espacio-pequeño) var(--espacio-medio);
-  border-radius: 8px;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  min-width: 80px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  flex: 1 1 80px;
-  max-width: 100px;
-  text-align: center;
 }
 
 .countdown__item span {
@@ -112,15 +111,13 @@ a:hover {
 }
 
 .countdown__item small {
-  display: block;
   font-size: 0.75rem;
   color: var(--color-text-base);
-  margin-top: 4px;
 }
 
 .save-date__fecha {
   font-family: var(--font-body);
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: var(--color-text-base);
 }
 
