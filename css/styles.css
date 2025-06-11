@@ -545,3 +545,25 @@ a:hover {
   background-color: var(--color-hover-secundario);
   transform: translateY(-2px);
 }
+/* -------------------------------
+   Posicionamiento y estilo de flechas Swiper
+   ------------------------------- */
+.swiper-container {
+  position: relative; /* para que las flechas queden dentro */
+}
+
+/* Color y tamaño de las flechas */
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--color-hero-bg);   /* usa tu color principal */
+  width: 32px;
+  height: 32px;
+}
+
+/* Ajusta su posición horizontal */
+.swiper-button-prev {
+  left: 10px;
+}
+.swiper-button-next {
+  right: 10px;
+}
