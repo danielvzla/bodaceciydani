@@ -286,15 +286,20 @@
   <!-- 10. Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      new Swiper(".swiper-container", {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        loop: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+  document.addEventListener("DOMContentLoaded", () => {
+    new Swiper(".swiper-container", {
+      slidesPerView: 1,       // 1 tarjeta por vista en todos los dispositivos
+      spaceBetween: 20,
+      loop: false,            // opcional: desactiva el loop si no lo quieres
+      allowTouchMove: false,  // bloquea el swipe por touch
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+      // elimina breakpoints si siempre quieres 1 slide
+    });
+  });
+</script>
         breakpoints: {
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
