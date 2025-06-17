@@ -402,3 +402,20 @@ a:hover {
   background-color: var(--color-hover-secundario);
   transform: translateY(-2px);
 }
+<section class="save-the-date-media">
+  <div class="media-wrapper">
+    <img
+      src="https://drive.google.com/uc?export=view&id=ID_DE_TU_IMAGEN"
+      alt="Foto Save the Date"
+      class="media-principal"
+    />
+    <a
+      href="https://drive.google.com/drive/folders/TU_ID_DE_CARPETA"
+      target="_blank"
+      rel="noopener"
+      class="btn btn--media"
+    >
+      Ver sesión completa
+    </a>
+  </div>
+</section>
