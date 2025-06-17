@@ -368,3 +368,37 @@ a:hover {
     width: 100% !important;
   }
 }
+
+.save-the-date-media {
+  background-color: var(--color-bg-general);
+  text-align: center;
+  padding: var(--espacio-grande) 1rem;
+}
+
+.media-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.media-principal {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: var(--espacio-medio);
+}
+
+.btn--media {
+  background-color: var(--color-acento);
+  color: white;
+  padding: var(--espacio-pequeño) var(--espacio-grande);
+  border-radius: 6px;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  transition: background-color var(--tiempo-transicion), transform var(--tiempo-transicion);
+}
+
+.btn--media:hover {
+  background-color: var(--color-hover-secundario);
+  transform: translateY(-2px);
+}
