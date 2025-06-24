@@ -220,6 +220,7 @@ a:hover {
 .swiper-container {
   position: relative;
   padding: var(--espacio-grande) 0;
+  text-align: center;
 }
 .swiper-wrapper {
   display: flex;
