@@ -307,6 +307,7 @@ a:hover {
   color: var(--color-hero-bg); /* Usa el color que manejes para títulos */
   margin-bottom: var(--espacio-medio);
   text-align: center;
+  margin-bottom: 2rem;
 }
 /* ========================================================================
    7. Mesa de regalos
