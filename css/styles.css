@@ -280,8 +280,8 @@ a:hover {
   width: 32px;
   height: 32px;
 }
-.swiper-button-prev { left: 20px; }
-.swiper-button-next { right: 20px; }
+.swiper-button-prev { left: 40px; }
+.swiper-button-next { right: 40px; }
 
 /* ========================================================================
    7. Mesa de regalos
