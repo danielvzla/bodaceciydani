@@ -221,6 +221,7 @@ a:hover {
   position: relative;
   padding: var(--espacio-grande) 0;
   text-align: center;
+   overflow-x: scroll;
 }
 .swiper-wrapper {
   display: flex;
