@@ -276,7 +276,7 @@ a:hover {
 /* Flechas de navegación Swiper */
 .swiper-button-prev,
 .swiper-button-next {
-  color: var(--color-hero-bg);
+  color: var(--color-bg-general);
   width: 32px;
   height: 32px;
 }
