@@ -277,8 +277,8 @@ a:hover {
 .swiper-button-prev,
 .swiper-button-next {
   color: var(--color-bg-general);
-  width: 64px;
-  height: 64px;
+  width: 32px;
+  height: 32px;
 }
 .swiper-button-prev { left: 10px; }
 .swiper-button-next { right: 10px; }
