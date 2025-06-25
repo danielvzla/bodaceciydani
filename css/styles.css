@@ -227,6 +227,7 @@ a:hover {
   padding: var(--espacio-grande) 0;
   text-align: center;
   overflow-x: clip;
+   margin-bottom: 2rem;
 }
 .swiper-wrapper {
   display: flex;
