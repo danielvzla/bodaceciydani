@@ -221,10 +221,10 @@ a:hover {
   position: relative;
   padding: var(--espacio-grande) 0;
   text-align: center;
-  overflow-x: scroll;
+  overflow-x: clip;
 }
 .swiper-wrapper {
-  display: align-items;
+  display: flex;
 }
 .swiper-slide {
   /* ancho auto para que Swiper lo controle */
