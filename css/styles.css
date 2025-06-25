@@ -2,11 +2,11 @@
    Variables de color y tipografía
    ======================================================================== */
 :root {
-  --color-hero-bg: #1F273D;           /* Azul noche profundo */
+  --color-hero-bg: #000000;           /* Negro */
   --color-bg-general: #F5F1E8;        /* Marfil cremoso */
   --color-acento: #CBA135;            /* Dorado metálico mate */
   --color-text-base: #4B4B4B;         /* Gris carbón medio */
-  --color-hover-secundario: #2F4F4F;  /* Azul petróleo suave */
+  --color-hover-secundario: #000000;  /* Negro */
 
   --font-heading: "Playfair Display", serif;
   --font-body: "Montserrat", sans-serif;
@@ -221,7 +221,7 @@ a:hover {
   position: relative;
   padding: var(--espacio-grande) 0;
   text-align: center;
-   overflow-x: scroll;
+  overflow-x: scroll;
 }
 .swiper-wrapper {
   display: flex;
@@ -235,7 +235,7 @@ a:hover {
   padding: var(--espacio-medio);
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  text-align: left;
+  text-align: center;
 }
 .hospedaje__imagen {
   width: 100%;
