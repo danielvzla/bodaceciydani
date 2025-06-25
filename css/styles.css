@@ -224,7 +224,7 @@ a:hover {
   overflow-x: scroll;
 }
 .swiper-wrapper {
-  display: flex;
+  display: align-items;
 }
 .swiper-slide {
   /* ancho auto para que Swiper lo controle */
