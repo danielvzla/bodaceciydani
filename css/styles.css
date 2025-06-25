@@ -313,49 +313,42 @@ a:hover {
 /* ========================================================================
    7. Mesa de regalos
    ======================================================================== */
-.regalos {
-  background-color: var(--color-bg-general);
-  padding: var(--espacio-grande) 1rem;
-  text-align: center;
-}
-.regalos__titulo {
-  font-family: var(--font-heading);
-  font-size: 2rem;
-  color: var(--color-hero-bg);
-  margin-bottom: var(--espacio-medio);
-}
-.regalos__contenedor {
-  display: flex;
-  justify-content: center;
-  gap: var(--espacio-grande);
-  flex-wrap: wrap;
-}
-.regalo {
+.regalo__bloque {
   background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  padding: var(--espacio-medio);
-  max-width: 200px;
-  width: 100%;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   text-align: center;
 }
-.regalo__marca {
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  margin-bottom: var(--espacio-pequeño);
-  color: var(--color-hero-bg);
+
+.regalo__subtitulo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #333;
 }
-.btn--regalo {
-  background-color: var(--color-acento);
-  color: #fff;
-  padding: var(--espacio-pequeño) var(--espacio-medio);
-  margin-top: var(--espacio-pequeño);
-  border-radius: 4px;
-  transition: background-color var(--tiempo-transicion), transform var(--tiempo-transicion);
+
+.regalo__texto {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin: 0 auto 1rem;
 }
-.btn--regalo:hover {
-  background-color: var(--color-hover-secundario);
-  transform: translateY(-2px);
+
+.btn.btn--regalo {
+  background-color: #c49c3f;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn.btn--regalo:hover {
+  background-color: #b4882f;
 }
 
 /* ========================================================================
