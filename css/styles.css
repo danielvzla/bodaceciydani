@@ -279,10 +279,9 @@ a:hover {
   color: var(--color-bg-general);
   width: 32px;
   height: 32px;
-   border-radius: 20px;
 }
-.swiper-button-prev { left: 10px; }
-.swiper-button-next { right: 10px; }
+.swiper-button-prev { left: 20px; }
+.swiper-button-next { right: 20px; }
 
 /* ========================================================================
    7. Mesa de regalos
