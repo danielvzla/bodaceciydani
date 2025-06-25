@@ -217,8 +217,13 @@ a:hover {
 /* ========================================================================
    6. Carrusel de Hospedaje (Swiper)
    ======================================================================== */
+.hospedaje {
+   background-color: var(--color-bg-general);
+  padding: var(--espacio-grande) 1rem;
+  text-align: center;
+   }
 .swiper-container {
-  position: center;
+  position: relative;
   padding: var(--espacio-grande) 0;
   text-align: center;
   overflow-x: clip;
