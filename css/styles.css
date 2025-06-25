@@ -229,7 +229,7 @@ a:hover {
 .swiper-slide {
   /* ancho auto para que Swiper lo controle */
   width: auto;
-   padding: 20px; 
+   padding: 50px; 
 }
 .hospedaje__card {
   background-color: #fff;
