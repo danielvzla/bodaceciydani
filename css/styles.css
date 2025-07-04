@@ -305,14 +305,22 @@ a:hover {
   text-align: center;
 }
 
+/* Imagen itinerario: móvil a 100% */
 .Itinerario__imagen {
-  max-width: 35%;     /* Que no ocupe más del 80% del ancho del contenedor */
-  width: 100%;        /* Escala proporcional dentro de ese 80% */
-  height: auto;       /* Mantiene proporción */
-  display: block;     /* Para que margin: 0 auto funcione */
-  margin: 0 auto;     /* Centra la imagen horizontalmente */
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* A partir de 768px, la reducimos al 60% */
+@media (min-width: 768px) {
+  .Itinerario__imagen {
+    max-width: 60%;
+  }
 }
 /* ========================================================================
    7. Mesa de regalos
