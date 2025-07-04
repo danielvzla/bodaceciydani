@@ -306,7 +306,7 @@ a:hover {
 }
 
 .Itinerario__imagen {
-  max-width: 50%;     /* Que no ocupe más del 80% del ancho del contenedor */
+  max-width: 35%;     /* Que no ocupe más del 80% del ancho del contenedor */
   width: 100%;        /* Escala proporcional dentro de ese 80% */
   height: auto;       /* Mantiene proporción */
   display: block;     /* Para que margin: 0 auto funcione */
