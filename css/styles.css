@@ -296,19 +296,23 @@ a:hover {
   text-align: center;
   padding: var(--espacio-grande) 1rem;
 }
-.Itinerario__imagen {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
+
 .Itinerario__titulo {
   font-family: var(--font-heading); /* Usa tu fuente principal */
-  font-size: 2rem;
-  color: var(--color-hero-bg); /* Usa el color que manejes para títulos */
+  font-size: 2rem;                  /* Ajusta tamaño si quieres otro */
+  color: var(--color-hero-bg);      /* Usa el color que manejes para títulos */
   margin-bottom: var(--espacio-medio);
   text-align: center;
-  margin-bottom: 2rem;
+}
+
+.Itinerario__imagen {
+  max-width: 80%;     /* Que no ocupe más del 80% del ancho del contenedor */
+  width: 100%;        /* Escala proporcional dentro de ese 80% */
+  height: auto;       /* Mantiene proporción */
+  display: block;     /* Para que margin: 0 auto funcione */
+  margin: 0 auto;     /* Centra la imagen horizontalmente */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 /* ========================================================================
    7. Mesa de regalos
