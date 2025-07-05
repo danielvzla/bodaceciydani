@@ -340,6 +340,24 @@ a:hover {
     max-width: 60%;
   }
 }
+
+/* 7.1. Mensaje de Luna de Miel */
+.mensaje-luna {
+  background-color: var(--color-bg-general);
+  padding: var(--espacio-medio) 1rem;
+  text-align: center;
+  font-style: italic;
+  color: var(--color-texto);
+  margin-bottom: var(--espacio-grande);
+}
+
+.mensaje-luna p {
+  max-width: 600px;
+  margin: 0.5rem auto;
+  line-height: 1.6;
+}
+
+
 /* ========================================================================
    7. Mesa de regalos
    ======================================================================== */
