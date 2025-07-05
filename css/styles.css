@@ -6,7 +6,7 @@
   --color-bg-general: #F5F1E8;        /* Marfil cremoso */
   --color-acento: #CBA135;            /* Dorado metálico mate */
   --color-text-base: #4B4B4B;         /* Gris carbón medio */
-  --color-hover-secundario: #000000;  /* Negro */
+  --color-hover-secundario: #b4882f;  /* Dark accent */
 
   --font-heading: "Playfair Display", serif;
   --font-body: "Montserrat", sans-serif;
@@ -41,12 +41,15 @@ body {
 }
 
 a {
+  display: inline-block;
   color: var(--color-acento);
   text-decoration: none;
-  transition: color var(--tiempo-transicion);
+  transition: color background-color transform var(--tiempo-transicion);
 }
 a:hover {
-  color: var(--color-hover-secundario);
+  background-color: var(--color-hover-secundario);
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 /* ========================================================================
@@ -180,17 +183,32 @@ a:hover {
   margin-bottom: var(--espacio-medio);
   line-height: 1.5;
 }
-.btn--mapa {
-  background-color: var(--color-hero-bg);
-  color: #fff;
+.btn {
+  display: inline-block;
+  text-decoration: none;
   padding: var(--espacio-pequeño) var(--espacio-grande);
   border-radius: 4px;
-  transition: background-color var(--tiempo-transicion), transform var(--tiempo-transicion);
+  transition: background-color var(--tiempo-transicion), transform var(--tiempo-transicion), color var(--tiempo-transicion);
 }
-.btn--mapa:hover {
+.btn:hover {
   background-color: var(--color-hover-secundario);
+  color: #fff;
   transform: translateY(-2px);
 }
+
+/* Primary button styling */
+.btn--primary {
+  background-color: var(--color-acento);
+  color: #fff;
+}
+
+/* Secondary button styling */
+.btn--secondary {
+  background-color: transparent;
+  border: 1px solid var(--color-acento);
+  color: var(--color-acento);
+}
+
 
 /* ========================================================================
    5. Confirmación de asistencia (Google Forms)
@@ -276,18 +294,8 @@ a:hover {
   font-size: 1rem;
   margin-bottom: var(--espacio-medio);
 }
-.btn--hospedaje {
-  background-color: var(--color-acento);
-  color: #fff;
-  padding: var(--espacio-pequeño) var(--espacio-medio);
-  border-radius: 4px;
-  display: inline-block;
-  transition: background-color var(--tiempo-transicion), transform var(--tiempo-transicion);
-}
-.btn--hospedaje:hover {
-  background-color: var(--color-hover-secundario);
-  transform: translateY(-2px);
-}
+/* (moved into .btn--primary above) */
+
 
 /* Flechas de navegación Swiper */
 .swiper-button-prev,
@@ -363,19 +371,9 @@ a:hover {
   margin: 0 auto 1rem;
 }
 
-.btn.btn--regalo {
-  background-color: #c49c3f;
-  color: white;
-  padding: 0.8rem 1.2rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-}
+/* (moved into .btn--primary above) */
 
-.btn.btn--regalo:hover {
-  background-color: #b4882f;
-}
+
 
 /* ========================================================================
    8. Pie de página
@@ -399,7 +397,7 @@ a:hover {
   .save-date__countdown { flex-direction: column; gap: var(--espacio-medio); }
   .countdown__item { width: 100%; }
 
-  .foto-secundaria__imagen { max-width: 90%; }
+  .foto-secundaria__imagen { max-width: 100%; }
 
   .eventos__titulo { font-size: 1.75rem; }
   .evento { padding: var(--espacio-pequeño); }
@@ -414,6 +412,18 @@ a:hover {
   /* En móvil, cada slide ocupa 100% */
   .swiper-container .swiper-slide {
     width: 100% !important;
+  }
+
+  /* Full-width buttons on mobile */
+  .btn {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* Ensure itinerary image fills container */
+  .Itinerario__imagen {
+    max-width: 100%;
   }
 }
 
@@ -436,20 +446,9 @@ a:hover {
   margin-bottom: var(--espacio-medio);
 }
 
-.btn--media {
-  background-color: var(--color-acento);
-  color: white;
-  padding: var(--espacio-pequeño) var(--espacio-grande);
-  border-radius: 6px;
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  transition: background-color var(--tiempo-transicion), transform var(--tiempo-transicion);
-}
+/* (moved into .btn--primary above) */
 
-.btn--media:hover {
-  background-color: var(--color-hover-secundario);
-  transform: translateY(-2px);
-}
+
 <section class="save-the-date-media">
   <div class="media-wrapper">
     <img
