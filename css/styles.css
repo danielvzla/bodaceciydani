@@ -41,12 +41,15 @@ body {
 }
 
 a {
+  display: inline-block;
   color: var(--color-acento);
   text-decoration: none;
-  transition: color var(--tiempo-transicion);
+  transition: color background-color transform var(--tiempo-transicion);
 }
 a:hover {
-  color: var(--color-hover-secundario);
+  background-color: var(--color-hover-secundario);
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 /* ========================================================================
