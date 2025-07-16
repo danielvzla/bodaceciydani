@@ -315,13 +315,6 @@ a:hover {
   padding: var(--espacio-grande) 1rem;
 }
 
-.Itinerario__titulo {
-  font-family: var(--font-heading); /* Usa tu fuente principal */
-  font-size: 2rem;                  /* Ajusta tamaño si quieres otro */
-  color: var(--color-hero-bg);      /* Usa el color que manejes para títulos */
-  margin-bottom: var(--espacio-medio);
-  text-align: center;
-}
 
 /* Imagen itinerario: móvil a 100% */
 .Itinerario__imagen {
